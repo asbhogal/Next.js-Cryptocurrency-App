@@ -1,14 +1,14 @@
-import Navbar from "./components/Navbar";
-import "./styles/root.scss";
+import { Dashboard, Navbar } from "./components";
+import "./styles/index.scss";
 
-export default function Home() {
+export default function App() {
     return (
         <div className="App">
             <nav className="Nav">
                 <Navbar />
             </nav>
-            <section className="Main">
-                
+            <section className="Dashboard">
+                <Dashboard />
             </section>
             <footer className="Footer">
 

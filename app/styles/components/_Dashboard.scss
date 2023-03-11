@@ -1,0 +1,37 @@
+@use '../partials/variables' as *;
+
+.Dashboard {
+    flex-grow: 1;
+    flex-direction: column;
+    gap: 35px;
+    > * {
+        display: flex;
+    }
+    .DashboardHeading {
+        flex-wrap: wrap;
+        padding: 40px;
+        font-size: 38px;
+    }
+}
+
+.CryptoSnapshots {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: $PrimaryColor-02;
+    margin: 40px;
+    gap: 25px;
+    .CryptoSnapshot {
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        h3 {
+            font-weight: 200;
+            font-size: 18px;
+        }
+        p {
+            font-weight: 300;
+            font-size: 24px;
+        }
+    }
+}

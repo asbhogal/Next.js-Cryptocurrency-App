@@ -1,9 +1,6 @@
 @use './components/App.scss' as *;
 @use './components/Nav.scss' as *;
+@use './components/Dashboard' as *;
 @use './partials/globals.scss' as *;
 @use './partials/variables.scss' as *;
 @use './partials/typography' as *;
-
-.App {
-    background-color: $PrimaryColor;
-}

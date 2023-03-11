@@ -6,6 +6,9 @@ const Navbar = () => {
   return (
     <>
         <div className="LogoContainer">
+            <h1 className="MainHeading">
+                cryptoverse
+            </h1>
             <img
                 src="/assets/Cryptoverse-Icon.svg"
             />

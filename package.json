@@ -5,7 +5,7 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "start-server": "next dev --turbo",
+    "start-server": "next dev",
     "build-prod": "next build",
     "lint": "next lint"
   },
@@ -16,5 +16,8 @@
     "next": "^13.2.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "sass": "^1.59.2"
   }
 }

@@ -1,3 +1,5 @@
+import "./styles/partials/globals.scss"
+
 export const metadata = {
     title: 'Cryptoverse',
     favicon: '/favicon.ico'
@@ -6,7 +8,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
       <html lang="en">
-        <body>{children}</body>
+        <body>{ children }</body>
       </html>
     )
   }

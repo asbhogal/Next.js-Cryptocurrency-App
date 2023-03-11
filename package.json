@@ -1,0 +1,20 @@
+{
+  "name": "next.js-cryptocurrency-app",
+  "version": "1.0.0",
+  "description": "A Cryptocurrency app built using Next.js and React",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "start-server": "next dev --turbo",
+    "build-prod": "next build",
+    "lint": "next lint"
+  },
+  "keywords": [],
+  "author": "Aman Singh Bhogal",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^13.2.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}

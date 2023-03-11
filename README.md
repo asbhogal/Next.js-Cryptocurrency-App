@@ -2,6 +2,8 @@
 
 <h1>Next.js - Cryptoverse Application</h1>
 
+![](https://api.checklyhq.com/v1/badges/checks/dcfba4e1-148c-4fd6-824c-f1a6c5597a8b?style=for-the-badge&theme=dark) ![](https://api.checklyhq.com/v1/badges/checks/dcfba4e1-148c-4fd6-824c-f1a6c5597a8b?style=for-the-badge&theme=dark&responseTime=true) <br><br> ![GitHub deployments](https://img.shields.io/github/deployments/asbhogal/Next.js-Cryptocurrency-App/production?label=DEPLOYMENT%20STATE&style=for-the-badge&labelColor=000) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/asbhogal/Next.js-Cryptocurrency-App?style=for-the-badge&labelColor=000) ![GitHub repo size](https://img.shields.io/github/repo-size/asbhogal/Next.js-Cryptocurrency-App?color=blueviolet&style=for-the-badge&labelColor=000)
+
 </div>
 
 A Cryptoverse application which pulls API data from the Coinranking, Bing News and RapidAPI endpoints. This has been built using Next.js, React, Redux, Axios, SCSS and deployed via Vercel. This repo is currently under development.

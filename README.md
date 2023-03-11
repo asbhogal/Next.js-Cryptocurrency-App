@@ -27,7 +27,7 @@ A Cryptoverse application which pulls API data from the Coinranking, Bing News a
 
 <strong>Links</strong>
 
- - <a href="_blank" href="https://next-js-cryptocurrency-app.vercel.app/">Cryptoverse App</a>
+ - <a target="_blank" href="https://next-js-cryptocurrency-app.vercel.app/">Cryptoverse App</a>
 
  <strong>Disclaimer</strong>
 

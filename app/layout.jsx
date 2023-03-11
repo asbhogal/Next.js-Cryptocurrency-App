@@ -1,4 +1,3 @@
-import "./styles/partials/globals.scss"
 
 export const metadata = {
     title: 'Cryptoverse',

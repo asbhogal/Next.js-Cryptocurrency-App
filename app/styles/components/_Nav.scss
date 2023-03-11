@@ -1,0 +1,27 @@
+.Nav {
+    flex-direction: column;
+    padding: 5px;
+    gap: 20px;
+    height: 100vh;
+    > * {
+        display: flex;
+    }
+    .LogoContainer {
+        img {
+            width: 25%;
+            height: auto;
+        }
+    }
+    .NavList {
+        flex-direction: column;
+        gap: 20px;
+        font-weight: 200;
+        .NavListItem {
+            a {
+                text-decoration: none;
+                text-transform: uppercase;
+                letter-spacing: 0.1rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+/****** NOTO SANS - THIN 100 ******/
+
+@font-face {
+    font-family: Noto Sans;
+    font-weight: 100;
+    font-style: normal;
+    src:    url(/fonts/NotoSans-Thin.woff) format(woff),
+            url(/fonts/NotoSans-Thin.woff2) format(woff2);
+    font-display: swap;
+}
+
+/****** NOTO SANS - EXTRA LIGHT 200 ******/
+
+@font-face {
+    font-family: Noto Sans;
+    font-weight: 200;
+    font-style: normal;
+    src:    url(/fonts/NotoSans-ExtraLight.woff) format(woff),
+            url(/fonts/NotoSans-ExtraLight.woff2) format(woff2);
+    font-display: swap;
+}
+
+/****** NOTO SANS - LIGHT 300 ******/
+
+@font-face {
+    font-family: Noto Sans;
+    font-weight: 300;
+    font-style: normal;
+    src:    url(/fonts/NotoSans-Light.woff) format(woff),
+            url(/fonts/NotoSans-Light.woff2) format(woff2);
+    font-display: swap;
+}
+
+/****** NOTO SANS - REGULAR 400 ******/
+
+@font-face {
+    font-family: Noto Sans;
+    font-weight: 400;
+    font-style: normal;
+    src:    url(/fonts/NotoSans-Regular.woff) format(woff),
+            url(/fonts/NotoSans-Regular.woff2) format(woff2);
+    font-display: swap;
+}
+
+* {
+    font-family: 'Noto Sans', sans-serif;
+    color: #d9d9d9;
+}

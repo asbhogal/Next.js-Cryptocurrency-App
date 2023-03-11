@@ -1,4 +1,3 @@
-
 export const metadata = {
     title: 'Cryptoverse',
     favicon: '/favicon.ico'

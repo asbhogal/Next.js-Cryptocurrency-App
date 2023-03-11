@@ -1,5 +1,3 @@
-'use client';
-
 import Navbar from "./components/Navbar";
 import "./styles/root.scss";
 
@@ -10,7 +8,7 @@ export default function Home() {
                 <Navbar />
             </nav>
             <section className="Main">
-
+                
             </section>
             <footer className="Footer">
 

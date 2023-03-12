@@ -3,11 +3,6 @@
 import store from "./store/store.js";
 import { Provider } from "react-redux";
 
-export const metadata = {
-    title: 'Cryptoverse',
-    favicon: '/favicon.ico'
-}
-
 export default function RootLayout({ children }) {
     return (
       <html lang="en">

@@ -1,4 +1,7 @@
-'use client';
+export const metadata = {
+    title: 'Cryptoverse',
+    favicon: '/favicon.ico'
+}
 
 import { Dashboard, Navbar } from "./components";
 import "./styles/index.scss";

@@ -1,10 +1,12 @@
+'use client';
+
 import millify from "millify";
 
-import { useGetCryptoQuery } from "../api/cryptoAPI";
+import { useGetCryptosQuery } from "../services/cryptoApi.js";
 
 const Dashboard = () => {
 
-    const { data, isFetching } = useGetCryptoQuery();
+    const { data, isFetching } = useGetCryptosQuery();
 
     console.log(data);
 

@@ -1,3 +1,5 @@
+'use client';
+
 import { Dashboard, Navbar } from "./components";
 import "./styles/index.scss";
 

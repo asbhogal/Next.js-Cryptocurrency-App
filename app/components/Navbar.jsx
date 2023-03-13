@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { BsCurrencyExchange, BsCurrencyBitcoin, BsNewspaper } from "react-icons/bs";
 import { BiHomeAlt2 } from "react-icons/bi"
+import "../styles/index.scss";
 
 const Navbar = () => {
   return (

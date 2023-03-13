@@ -1,7 +1,7 @@
-import React from 'react'
+'use client';
 
 export default function page() {
   return (
-    <div>page</div>
+    <div>EXCHANGE RATES</div>
   )
 }

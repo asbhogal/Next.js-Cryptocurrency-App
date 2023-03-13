@@ -17,6 +17,13 @@ const Dashboard = () => {
         <>
             <div className="DashboardHeading">
                 <h2>Global Crypto Stats</h2>
+                <div className="CurrentStatus">
+                    <p>Status</p>
+                    <span className="CurrentStatusLight">
+                        <span className="AnimatedPulseFront"></span>
+                        <span className="AnimatedPulseBack"></span>
+                    </span>
+                </div>
             </div>
             <div className="CryptoSnapshots">
                 <div className="CryptoSnapshot">

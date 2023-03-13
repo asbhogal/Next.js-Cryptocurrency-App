@@ -9,22 +9,60 @@
     }
     .DashboardHeading {
         flex-wrap: wrap;
-        padding: 40px;
+        padding: 15px;
         font-size: 38px;
+        .CurrentStatus {
+            display: flex;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 3px;
+            border-radius: 5px;
+            outline: none;
+            border: none;
+            background-color: black;
+            font-weight: 600;
+            font-size: 20px;
+            color: #ebebeb;
+            cursor: pointer;
+            .CurrentStatusLight {
+                display: flex;
+                width: 5px;
+                height: 5px;
+                .AnimatedPulseFront {
+                    width: 2px;
+                    height: 2px;
+                    background-color: #033923;
+                    border-radius: 50%;
+                    filter: blur(2px);
+                    //position: relative;
+                    left: 10px;
+                }
+                .AnimatedPulseBack {
+                    height: 2px;
+                    width: 2px;
+                    border-radius: 50%;
+                    animation: pulse-animation 1.5s infinite;
+                }
+            }
+        }
     }
 }
 
 .CryptoSnapshots {
     justify-content: space-around;
     flex-wrap: wrap;
-    background-color: $PrimaryColor-02;
     margin: 40px;
-    gap: 25px;
+    gap: 20px;
     .CryptoSnapshot {
         height: 100px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        flex: 1 1 0px;
+        background: #260426ba;
+        padding: 10px;
+        border-radius: 5px;
         h3 {
             font-weight: 200;
             font-size: 18px;
@@ -33,5 +71,20 @@
             font-weight: 300;
             font-size: 24px;
         }
+    }
+}
+
+/****** KEYFRAMES ******/
+
+@keyframes pulse-animation {
+    0% {
+        box-shadow: 0 0 #033923;
+    }
+    50% {
+        box-shadow: 0 0 0 7px #033923;
+        filter: blur(7px);
+    }
+    100% {
+        box-shadow: 0 0 #033923;
     }
 }

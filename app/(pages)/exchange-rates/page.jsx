@@ -1,7 +1,10 @@
-'use client';
+export const metadata = {
+  title: 'Cryptoverse | Exchange Rates',
+  favicon: '/favicon.ico'
+}
 
 export default function page() {
   return (
-    <div>EXCHANGE RATES</div>
+    <div className="Content">EXCHANGE RATES</div>
   )
 }

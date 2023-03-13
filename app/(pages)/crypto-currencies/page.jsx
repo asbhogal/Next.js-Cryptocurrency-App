@@ -1,7 +1,10 @@
-'use client';
+export const metadata = {
+  title: 'Cryptoverse | Cryptocurrencies  ',
+  favicon: '/favicon.ico'
+}
 
 export default function page() {
   return (
-    <div>CRYPTOCURRENCIES</div>
+    <div className="Content">CRYPTOCURRENCIES</div>
   )
 }

@@ -1,5 +1,5 @@
 export const metadata = {
-    title: 'Cryptoverse',
+    title: 'Cryptoverse | Dashboard',
     favicon: '/favicon.ico'
 }
 
@@ -8,7 +8,7 @@ import "./styles/index.scss";
 
 export default function App() {
     return (
-        <section className="Dashboard">
+        <section className="Content Dashboard">
             <Dashboard />
         </section>
     )

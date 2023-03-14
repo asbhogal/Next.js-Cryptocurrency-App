@@ -28,6 +28,7 @@ const Dashboard = () => {
             <div className="CryptoSnapshots">
                 <div className="CryptoSnapshot">
                     <h3>Total Cryptocurrencies</h3>
+                    <span className="Divider"></span>
                     <p>{ globalStats.total }</p>
                 </div>
                 <div className="CryptoSnapshot">

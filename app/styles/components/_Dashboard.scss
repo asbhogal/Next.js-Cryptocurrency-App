@@ -9,40 +9,52 @@
     }
     .DashboardHeading {
         flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
         padding: 15px;
         font-size: 38px;
-        .CurrentStatus {
-            display: flex;
+        .IconTray {
             display: flex;
             align-items: center;
-            justify-content: center;
-            gap: 3px;
-            border-radius: 5px;
-            outline: none;
-            border: none;
-            background-color: black;
-            font-weight: 600;
-            font-size: 20px;
-            color: #ebebeb;
-            cursor: pointer;
-            .CurrentStatusLight {
+            gap: 10px;
+            .CurrentStatus {
                 display: flex;
-                width: 5px;
-                height: 5px;
-                .AnimatedPulseFront {
-                    width: 2px;
-                    height: 2px;
-                    background-color: #033923;
-                    border-radius: 50%;
-                    filter: blur(2px);
-                    //position: relative;
-                    left: 10px;
+                align-items: center;
+                justify-content: center;
+                gap: 5px;
+                height: fit-content;
+                background: #464545;
+                padding: 5px 15px;
+                border-radius: 25px;
+                font-size: 20px;
+                .CurrentStatusLight {
+                    display: flex;
+                    width: 25px;
+                    height: 25px;
+                    .AnimatedPulseFront {
+                        width: 25px;
+                        height: 25px;
+                        background-color: #033923;
+                        border-radius: 50%;
+                        filter: blur(5px);
+                        left: 10px;
+                    }
+                    .AnimatedPulseBack {
+                        height: 25px;
+                        width: 25px;
+                        position: absolute;
+                        border-radius: 50%;
+                        animation: pulse-animation 1.5s infinite;
+                    }
                 }
-                .AnimatedPulseBack {
-                    height: 2px;
-                    width: 2px;
-                    border-radius: 50%;
-                    animation: pulse-animation 1.5s infinite;
+            }
+            .Notifications {
+                display: flex;
+                background-color: #464545;
+                border-radius: 50px;
+                cursor: pointer;
+                path {
+                    width: 4px;
                 }
             }
         }
@@ -52,7 +64,7 @@
 .CryptoSnapshots {
     justify-content: space-around;
     flex-wrap: wrap;
-    margin: 40px;
+    margin: 0 40px;
     gap: 20px;
     .CryptoSnapshot {
         display: flex;

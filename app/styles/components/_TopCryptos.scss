@@ -2,25 +2,27 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
     gap: 20px;
-    margin: 0 40px;
     .TopCryptosCard {
         display: grid;
         gap: 10px;
         padding: 25px;
         background-color: #260426ba;
-        .CryptoInfo {
+        div {
             display: flex;
-            align-items: center;
             justify-content: space-between;
+        }
+        .CryptoInfo {
+            align-items: center;
             .CryptoNameAndRank {
                 display: flex;
                 gap: 20px;
+                font-size: 18px;
             }
             .CryptoIcon {
                 display: flex;
                 img {
-                    height: 20px;
-                    width: 20px;
+                    height: 35px;
+                    width: auto;
                 }
             }
         }

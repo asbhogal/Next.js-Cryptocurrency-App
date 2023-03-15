@@ -4,6 +4,7 @@
     flex-grow: 1;
     flex-direction: column;
     gap: 35px;
+    padding: 0 40px;
     > * {
         display: flex;
     }
@@ -11,8 +12,8 @@
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
-        padding: 15px;
-        font-size: 38px;
+        padding: 15px 0;
+        font-size: 28px;
         .IconTray {
             display: flex;
             align-items: center;
@@ -23,7 +24,7 @@
                 justify-content: center;
                 gap: 5px;
                 height: fit-content;
-                background: #464545;
+                background-color: $DarkChocolate;
                 padding: 5px 15px;
                 border-radius: 25px;
                 font-size: 20px;
@@ -34,10 +35,9 @@
                     .AnimatedPulseFront {
                         width: 25px;
                         height: 25px;
-                        background-color: #033923;
+                        background-color: #0fa065;
                         border-radius: 50%;
                         filter: blur(5px);
-                        left: 10px;
                     }
                     .AnimatedPulseBack {
                         height: 25px;
@@ -64,7 +64,6 @@
 .CryptoSnapshots {
     justify-content: space-around;
     flex-wrap: wrap;
-    margin: 0 40px;
     gap: 20px;
     .CryptoSnapshot {
         display: flex;
@@ -72,7 +71,7 @@
         justify-content: space-around;
         flex: 1 1 0px;
         gap: 10px;
-        background: #260426ba;
+        background-color: $DarkChocolate;
         padding: 10px;
         border-radius: 5px;
         h3 {

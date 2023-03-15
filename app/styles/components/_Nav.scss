@@ -2,9 +2,7 @@
     flex-direction: column;
     align-items: center;
     padding: 5px;
-    gap: 20px;
-    height: 100vh;
-    border-right: 1px solid #d9d9d9;
+    gap: 35px;
     > * {
         display: flex;
     }
@@ -24,17 +22,14 @@
     }
     .NavList {
         flex-direction: column;
-        gap: 40px;
+        gap: 20px;
         font-weight: 200;
-        width: max-content;
         .NavListItem {
             list-style-type: none;
             padding: 10px;
             border-radius: 5px;
-            background-color: #260426ba;
             a {
                 display: flex;
-                flex-direction: column;
                 align-items: center;
                 gap: 10px;
                 text-decoration: none;

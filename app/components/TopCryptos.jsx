@@ -31,13 +31,16 @@ const TopCryptos = () => {
                             </div>
                         </div>
                         <div className="CryptoPrice">
-                            <p>{ `Price: $ ${ millify(currency.price, { precision: 3} ) }` }</p>
+                            <p>Price:</p>
+                            <p>{ `$ ${ millify(currency.price, { precision: 3} ) }` }</p>
                         </div>
                         <div className="CryptoMarketPrice">
-                            <p>{ `Market Cap: $ ${ millify(currency.marketCap, { precision: 3} ) }` }</p>
+                            <p>Market Cap:</p>
+                            <p>{ `$ ${ millify(currency.marketCap, { precision: 3} ) }` }</p>
                         </div>
                         <div className="CryptoChange">
-                            <p>Change: { `${ millify(currency.change, { precision: 3} ) }%` }</p>
+                            <p>Change:</p>
+                            <p>{ `${ millify(currency.change, { precision: 3} ) }%` }</p>
                             {console.log((currency.change).slice(0, 1))}
                             {/* { ((currency.change).slice(0, 1)) === '-' 
                                 ? document.getElementsByClassName('CryptoChange').style.color = "Red" 

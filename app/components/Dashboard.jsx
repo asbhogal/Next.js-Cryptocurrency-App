@@ -57,7 +57,7 @@ const Dashboard = () => {
                     <p>{ millify(globalStats.totalMarkets) }</p>
                 </div>
             </div>
-
+            <h2>Current Top Cryptocurrencies</h2>
             <TopCryptos />
 
         </>

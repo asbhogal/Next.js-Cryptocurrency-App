@@ -38,7 +38,7 @@ const Dashboard = () => {
                 </div>
                 <div className="CryptoSnapshot">
                     <h3>Total Coins</h3>
-                    <p>{ millify(globalStats.totalCoins) }</p>
+                    <p>{ millify(globalStats.totalCoins, { space: true }) }</p>
                 </div>
                 <div className="CryptoSnapshot">
                     <h3>Total Exchanges</h3>
@@ -46,15 +46,15 @@ const Dashboard = () => {
                 </div>
                 <div className="CryptoSnapshot">
                     <h3>Total Market Cap</h3>
-                    <p>{ `$${millify(globalStats.totalMarketCap, { precision: 2} ) }` }</p>
+                    <p>{ `$${millify(globalStats.totalMarketCap, { precision: 2, space: true } ) }` }</p>
                 </div>
                 <div className="CryptoSnapshot">
                     <h3>Total 24hr Volume</h3>
-                    <p>{ millify(globalStats.total24hVolume) }</p>
+                    <p>{ millify(globalStats.total24hVolume, { space: true }) }</p>
                 </div>
                 <div className="CryptoSnapshot">
                     <h3>Total Markets</h3>
-                    <p>{ millify(globalStats.totalMarkets) }</p>
+                    <p>{ millify(globalStats.totalMarkets, { space: true }) }</p>
                 </div>
             </div>
             <h2>Current Top Cryptocurrencies</h2>

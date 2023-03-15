@@ -1,3 +1,5 @@
+@use '../partials/variables' as *;
+
 .Nav {
     flex-direction: column;
     align-items: center;
@@ -28,6 +30,12 @@
             list-style-type: none;
             padding: 10px;
             border-radius: 5px;
+            cursor: pointer;
+            transition: 1s all ease-in;
+                &:hover {
+                    background-color: $DarkChocolate;
+                    transition: 0.3s all ease-in;
+                }
             a {
                 display: flex;
                 align-items: center;
@@ -35,7 +43,6 @@
                 text-decoration: none;
                 text-transform: uppercase;
                 letter-spacing: 0.1rem;
-                cursor: pointer;
             }
         }
     }

@@ -7,7 +7,15 @@
             .NavList {
                 flex-direction: row;
                 width: auto;
+                .NavListItem > a > p {
+                    display: none;
+                }
             }
+        }
+    }
+    .CryptoSnapshots .CryptoSnapshot {
+        p {
+            font-size: 18px;
         }
     }
 }

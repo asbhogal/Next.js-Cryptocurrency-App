@@ -16,16 +16,16 @@ const Navbar = () => {
         </div>
         <ul className="NavList">
             <li className="NavListItem">
-                <Link href="/"><BiHomeAlt2 size={ 28 } />Home</Link>
+                <Link href="/"><BiHomeAlt2 size={ 28 } /><p>Home</p></Link>
             </li>
             <li className="NavListItem">
-                <Link href="/crypto-currencies"><BsCurrencyBitcoin size={ 28 } />Cryptocurrencies</Link>
+                <Link href="/crypto-currencies"><BsCurrencyBitcoin size={ 28 } /><p>Cryptocurrencies</p></Link>
             </li>
             <li className="NavListItem">
-                <Link href="/exchange-rates"><BsCurrencyExchange size={ 28 } />Exchange Rates</Link>
+                <Link href="/exchange-rates"><BsCurrencyExchange size={ 28 } /><p>Exchange Rates</p></Link>
             </li>
             <li className="NavListItem">
-                <Link href="/news"><BsNewspaper size={ 28 } />News</Link>
+                <Link href="/news"><BsNewspaper size={ 28 } /><p>News</p></Link>
             </li>
         </ul>
     </>

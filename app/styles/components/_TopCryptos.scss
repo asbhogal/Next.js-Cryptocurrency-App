@@ -13,9 +13,10 @@
         }
         .CryptoInfo {
             align-items: center;
+            padding-bottom: 15px;
             .CryptoNameAndRank {
                 display: flex;
-                gap: 20px;
+                gap: 15px;
                 font-size: 18px;
             }
             .CryptoIcon {

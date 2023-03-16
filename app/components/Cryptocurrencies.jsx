@@ -15,13 +15,11 @@ const Cryptocurrencies = () => {
     console.log(cryptoCurrencies);
 
   return (
-    <div>
         <div className="CryptocurrenciesTable">
-            <div>
+        <h2>Top 50 Cryptocurrencies By Market Cap</h2>
+            <div className="TableContainer">
                 <div className="TableHeadings">
-                    <span>Rank</span>
-                    <span>Icon</span>
-                    <span>Name & Symbol</span>
+                    <span>Name</span>
                     <span>Price</span>
                     <span>Market Cap</span>
                     <span>Change</span>
@@ -43,7 +41,6 @@ const Cryptocurrencies = () => {
                 )) }
             </div>
         </div>
-    </div>
   )
 }
 

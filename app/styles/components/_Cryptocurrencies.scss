@@ -1,20 +1,26 @@
 @use '../partials/variables' as *;
 
 .CryptoListIcon {
-    width: 25px;
+    width: 35px;
     height: auto;
 }
 
 .CryptocurrenciesTable {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    gap: 30px;
+    .TableContainer {
+        display: grid;
+        gap: 25px;
+    }
     .CryptocurrenciesRow {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        span:nth-child(2) {
-            font-weight: 200;
-        }
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .TableHeadings {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
@@ -27,4 +33,9 @@
 .CryptoListNameAndSymbol {
     display: flex;
     flex-direction: column;
+    span {
+        &:nth-child(2) {
+            font-weight: 200;
+        }
+    }
 }

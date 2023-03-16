@@ -1,3 +1,5 @@
+@use '../partials/variables' as *;
+
 .TopCryptosListContainer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
@@ -27,5 +29,23 @@
                 }
             }
         }
+    }
+}
+
+.TopCryptosHeading {
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.SearchCryptosInput {
+    outline: none;
+    border: none;
+    background-color: $DarkChocolate;
+    padding: 10px 15px;
+    color: white;
+    caret-color: white;
+    &::placeholder {
+        color: white;
+        opacity: 0.5;
     }
 }

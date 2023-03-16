@@ -1,7 +1,6 @@
 'use client';
 
-import Link from "next/link.js";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import millify from "millify";
 import { useGetCryptosQuery } from "../services/cryptoApi.js";
 
@@ -9,14 +8,29 @@ const TopCryptos = ({ simplified }) => {
 
     const   count = simplified ? 10 : 100,
             { data: cryptosList, isFetching } = useGetCryptosQuery(count),
-            [cryptos, setCryptos] = useState(cryptosList?.data?.coins);
+            [cryptos, setCryptos] = useState([]),
+            [searchTerm, setSearchTerm] = useState('');
 
-    console.log(cryptos);
+    useEffect(() => {
+
+        const top10CurrentCryptos = cryptosList?.data?.coins;
+
+        const filteredData = top10CurrentCryptos.filter((coin) => coin.name.toLowerCase().includes(searchTerm.toLowerCase()));
+
+        setCryptos(filteredData);
+
+    }, [cryptosList, searchTerm])
     
     return (
         <>
+            <div className="TopCryptosHeading">
+                <h2>Top 10 Current Cryptocurrencies</h2>
+                <div className="SearchCryptos">
+                    <input className="SearchCryptosInput" placeholder="Search for cryptocurrencies..." onChange={ (e) => setSearchTerm(e.target.value) } />
+                </div>
+            </div>
             <div className="TopCryptosListContainer">
-                { cryptos.map((currency) => (
+                { cryptos?.map((currency) => (
                     <div className="TopCryptosCard" key={ currency.uuid }>
                         <div className="CryptoInfo">
                             <div className="CryptoNameAndRank">

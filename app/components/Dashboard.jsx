@@ -9,8 +9,6 @@ const Dashboard = () => {
 
     const   { data, isFetching } = useGetCryptosQuery(10),
             globalStats = data?.data?.stats;
-
-    console.log(globalStats);
     
     if(isFetching) return 'Please wait, data loading...';
 
@@ -57,9 +55,7 @@ const Dashboard = () => {
                     <p>{ millify(globalStats.totalMarkets, { space: true }) }</p>
                 </div>
             </div>
-            <h2>Current Top Cryptocurrencies</h2>
             <TopCryptos simplified />
-
         </>
     )
 }

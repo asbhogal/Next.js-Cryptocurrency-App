@@ -1,0 +1,30 @@
+@use '../partials/variables' as *;
+
+.CryptoListIcon {
+    width: 25px;
+    height: auto;
+}
+
+.CryptocurrenciesTable {
+    display: flex;
+    justify-content: center;
+    .CryptocurrenciesRow {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        span:nth-child(2) {
+            font-weight: 200;
+        }
+    }
+}
+
+.CryptoListSnapshot {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.CryptoListNameAndSymbol {
+    display: flex;
+    flex-direction: column;
+}

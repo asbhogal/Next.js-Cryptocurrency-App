@@ -7,7 +7,7 @@ import { TopCryptos } from "./index.js";
 
 const Dashboard = () => {
 
-    const   { data, isFetching } = useGetCryptosQuery(),
+    const   { data, isFetching } = useGetCryptosQuery(10),
             globalStats = data?.data?.stats;
 
     console.log(globalStats);
@@ -58,7 +58,7 @@ const Dashboard = () => {
                 </div>
             </div>
             <h2>Current Top Cryptocurrencies</h2>
-            <TopCryptos />
+            <TopCryptos simplified />
 
         </>
     )

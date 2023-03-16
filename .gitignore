@@ -10,3 +10,7 @@ out
 ### ENV FILES ###
 
 .env
+
+### NOTES ###
+
+notes.txt

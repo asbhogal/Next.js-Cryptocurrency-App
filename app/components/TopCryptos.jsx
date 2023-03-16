@@ -5,9 +5,10 @@ import { useState } from "react";
 import millify from "millify";
 import { useGetCryptosQuery } from "../services/cryptoApi.js";
 
-const TopCryptos = () => {
+const TopCryptos = ({ simplified }) => {
 
-    const   { data: cryptosList, isFetching } = useGetCryptosQuery(),
+    const   count = simplified ? 10 : 100,
+            { data: cryptosList, isFetching } = useGetCryptosQuery(count),
             [cryptos, setCryptos] = useState(cryptosList?.data?.coins);
 
     console.log(cryptos);
@@ -15,7 +16,7 @@ const TopCryptos = () => {
     return (
         <>
             <div className="TopCryptosListContainer">
-                { cryptos.slice(0, 10).map((currency) => (
+                { cryptos.map((currency) => (
                     <div className="TopCryptosCard" key={ currency.uuid }>
                         <div className="CryptoInfo">
                             <div className="CryptoNameAndRank">

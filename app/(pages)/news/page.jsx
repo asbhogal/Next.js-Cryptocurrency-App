@@ -1,3 +1,5 @@
+import News from "@/app/components/News"
+
 export const metadata = {
   title: 'Cryptoverse | News',
   favicon: '/favicon.ico'
@@ -5,6 +7,8 @@ export const metadata = {
 
 export default function page() {
   return (
-    <div className="Content">NEWS</div>
+    <div className="Content">
+      <News />
+    </div>
   )
 }

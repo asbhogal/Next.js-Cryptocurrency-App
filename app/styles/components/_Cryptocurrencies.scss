@@ -17,6 +17,11 @@
     .CryptocurrenciesRow {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+        &:not(:last-child) {
+            border-bottom: 1px solid white;
+            padding-bottom: 5px;
+        }
     }
     .TableHeadings {
         display: grid;

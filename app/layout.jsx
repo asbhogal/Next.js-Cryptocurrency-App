@@ -6,18 +6,18 @@ import { Navbar } from "./components/index.js";
 import "./styles/index.scss";
 
 export default function RootLayout({ children }) {
-    return (
-      <html lang="en">
-        <body>
-        <Provider store={ store }>
-          <div className="App">
-          <div className="Nav">
-            <Navbar />
-          </div>
+  return (
+    <html lang="en">
+      <body>
+      <Provider store={ store }>
+        <div className="App">
+        <div className="Nav">
+          <Navbar />
+        </div>
           { children }
-          </div>
-        </Provider>
-        </body>
-      </html>
-    )
-  }
+        </div>
+      </Provider>
+      </body>
+    </html>
+  )
+}

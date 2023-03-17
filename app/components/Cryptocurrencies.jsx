@@ -1,9 +1,7 @@
 'use client';
 
-import React from 'react'
 import millify from "millify";
 import { useGetCryptoFullListQuery } from "../services/cryptoApi.js";
-
 
 const Cryptocurrencies = () => {
 
@@ -12,9 +10,7 @@ const Cryptocurrencies = () => {
     
     if(isFetching) return 'Please wait, data loading...';
 
-    console.log(cryptoCurrencies);
-
-  return (
+    return (
         <div className="CryptocurrenciesTable">
         <h2>Top 50 Cryptocurrencies By Market Cap</h2>
             <div className="TableContainer">
@@ -41,7 +37,7 @@ const Cryptocurrencies = () => {
                 )) }
             </div>
         </div>
-  )
+    )
 }
 
-export default Cryptocurrencies
+export default Cryptocurrencies;

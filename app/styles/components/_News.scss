@@ -1,0 +1,42 @@
+@use '../partials/variables' as *;
+
+.News {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    .CryptoNewsCard {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 15px;
+        background-color: #260426ba;
+        text-decoration: none;
+        .CryptoNewsImg {
+            width: 50%;
+            height: auto;
+        }
+        p {
+            &:nth-child(2) {
+                text-transform: uppercase;
+                font-weight: 500;
+            }
+            &:nth-child(3) {
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+.NewsProviderDetails {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.NewsProviderLogo {
+    width: 40px;
+    img {
+        height: auto;
+        width: 100%;
+    }
+}

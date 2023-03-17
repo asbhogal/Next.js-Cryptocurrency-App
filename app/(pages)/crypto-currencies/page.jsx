@@ -1,4 +1,6 @@
-import Cryptocurriencies from '../../components/Cryptocurrencies';
+'use client';
+
+import Cryptocurriencies from '@/app/components/Cryptocurrencies';
 
 export const metadata = {
   title: 'Cryptoverse | Cryptocurrencies  ',

@@ -1,3 +1,5 @@
+'use client';
+
 export const metadata = {
   title: 'Cryptoverse | Exchange Rates',
   favicon: '/favicon.ico'

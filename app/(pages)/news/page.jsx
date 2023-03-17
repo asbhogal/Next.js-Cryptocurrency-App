@@ -1,3 +1,5 @@
+'use client';
+
 import News from "@/app/components/News"
 
 export const metadata = {

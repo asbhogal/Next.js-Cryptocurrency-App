@@ -1,16 +1,17 @@
 'use client';
 
-import News from "@/app/components/News"
+import { Navbar, News } from "@/app/components";
 
 export const metadata = {
-  title: 'Cryptoverse | News',
+  title: 'Cryptoverse | Latest News',
   favicon: '/favicon.ico'
 }
 
 export default function page() {
   return (
-    <div className="Content">
+    <>
+      <Navbar />
       <News />
-    </div>
+    </>
   )
 }

@@ -1,6 +1,6 @@
 'use client';
 
-import Cryptocurriencies from '@/app/components/Cryptocurrencies';
+import { Navbar, Cryptocurrencies } from '@/app/components/index.js';
 
 export const metadata = {
   title: 'Cryptoverse | Cryptocurrencies  ',
@@ -9,8 +9,10 @@ export const metadata = {
 
 export default function page() {
   return (
-    <div className="Content">
-      <Cryptocurriencies />
-    </div>
+      <>
+        <Navbar />
+        <Cryptocurrencies />
+      </>
+      
   )
 }

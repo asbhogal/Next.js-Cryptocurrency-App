@@ -4,7 +4,6 @@
     flex-grow: 1;
     flex-direction: column;
     gap: 35px;
-    padding: 0 40px;
     > * {
         display: flex;
     }
@@ -22,26 +21,28 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                gap: 5px;
+                gap: 10px;
                 height: fit-content;
-                background-color: $DarkChocolate;
+                background-color: rgb(6 7 8 / 75%);
+                border-radius: 12px;
+                border: 1px solid rgba(255, 255, 255, 0.125);
                 padding: 5px 15px;
-                border-radius: 25px;
-                font-size: 20px;
+                p {
+                    font-size: 15px;
+                    text-transform: uppercase;
+                 }
                 .CurrentStatusLight {
                     display: flex;
-                    width: 25px;
-                    height: 25px;
                     .AnimatedPulseFront {
-                        width: 25px;
-                        height: 25px;
+                        width: 15px;
+                        height: 15px;
                         background-color: #0fa065;
                         border-radius: 50%;
                         filter: blur(5px);
                     }
                     .AnimatedPulseBack {
-                        height: 25px;
-                        width: 25px;
+                        height: 15px;
+                        width: 15px;
                         position: absolute;
                         border-radius: 50%;
                         animation: pulse-animation 1.5s infinite;
@@ -50,7 +51,6 @@
             }
             .Notifications {
                 display: flex;
-                background-color: #464545;
                 border-radius: 50px;
                 cursor: pointer;
                 path {
@@ -71,7 +71,9 @@
         justify-content: space-around;
         flex: 1 1 0px;
         gap: 10px;
-        background-color: $DarkChocolate;
+        background-color: rgb(6 7 8 / 75%);
+        border-radius: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.125);
         padding: 10px;
         h3 {
             font-weight: 200;

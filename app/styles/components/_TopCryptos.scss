@@ -8,7 +8,9 @@
         display: grid;
         gap: 10px;
         padding: 25px;
-        background-color: #260426ba;
+        background-color: rgb(6 7 8 / 75%);
+        border-radius: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.125);
         div {
             display: flex;
             justify-content: space-between;
@@ -40,10 +42,13 @@
 .SearchCryptosInput {
     outline: none;
     border: none;
-    background-color: $DarkChocolate;
+    background-color: rgb(6 7 8 / 75%);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
     padding: 10px 15px;
     color: white;
     caret-color: white;
+    cursor: pointer;
     &::placeholder {
         color: white;
         opacity: 0.5;

@@ -4,10 +4,15 @@
     &:is(&::after, &::before, *) {
         box-sizing: border-box;
     }
-    // outline: 1px solid red;
+    outline: 1px solid red;
+}
+
+body {
+    background-color: black;
 }
 
 .Content {
     flex-grow: 1;
     flex-direction: column;
+    padding: 0 40px;
 }

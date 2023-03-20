@@ -18,14 +18,15 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         align-items: center;
-        &:not(:last-child) {
-            border-bottom: 1px solid white;
-            padding-bottom: 5px;
-        }
+        background-color: rgb(6 7 8 / 75%);
+        border-radius: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.125);
+        padding: 5px 10px;
     }
     .TableHeadings {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
+        padding: 5px 10px;
     }
 }
 

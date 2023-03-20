@@ -1,8 +1,8 @@
 'use client';
 
 import millify from "millify";
-import { IoMdNotifications } from "react-icons/io"
 import { useGetCryptosQuery } from "../services/cryptoApi.js";
+import { IoMdNotifications } from "react-icons/io"
 import { TopCryptos } from "./index.js";
 
 const Dashboard = () => {
@@ -13,7 +13,7 @@ const Dashboard = () => {
     if(isFetching) return 'Please wait, data loading...';
 
     return (
-        <>
+        <div className="Dashboard Content">
             <div className="DashboardHeading">
                 <h2>Dashboard</h2>
                 <div className="IconTray">
@@ -25,10 +25,10 @@ const Dashboard = () => {
                         </span>
                     </div>
                     <div className="Notifications">
-                            <IoMdNotifications />
-                        </div>
+                        <IoMdNotifications  />
                     </div>
                 </div>
+            </div>
             <div className="CryptoSnapshots">
                 <div className="CryptoSnapshot">
                     <h3>Total Cryptocurrencies</h3>
@@ -56,7 +56,7 @@ const Dashboard = () => {
                 </div>
             </div>
             <TopCryptos simplified />
-        </>
+        </div>
     )
 }
 

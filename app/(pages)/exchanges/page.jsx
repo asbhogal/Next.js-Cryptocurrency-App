@@ -1,5 +1,8 @@
 'use client';
 
+import { Navbar } from "@/app/components";
+import Exchanges from "@/app/components/Exchanges";
+
 export const metadata = {
   title: 'Cryptoverse | Exchange Rates',
   favicon: '/favicon.ico'
@@ -7,6 +10,9 @@ export const metadata = {
 
 export default function page() {
   return (
-    <div className="Content">EXCHANGE RATES</div>
+    <>
+      <Navbar />
+      <Exchanges />
+    </>
   )
 }

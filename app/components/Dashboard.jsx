@@ -1,6 +1,7 @@
 'use client';
 
 import millify from "millify";
+import { LineWave } from "react-loader-spinner";
 import { useGetCryptosQuery } from "../services/cryptoApi.js";
 import { IoMdNotifications } from "react-icons/io"
 import { TopCryptos } from "./index.js";
@@ -10,7 +11,19 @@ const Dashboard = () => {
     const   { data, isFetching } = useGetCryptosQuery(10),
             globalStats = data?.data?.stats;
     
-    if(isFetching) return 'Please wait, data loading...';
+    if(isFetching) return   <LineWave
+                                height="100"
+                                width="100"
+                                color="#d9d9d9"
+                                ariaLabel="line-wave"
+                                wrapperStyle={{
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    width: '100%'
+                                }}
+                                visible={true}
+                            />
 
     return (
         <div className="Dashboard Content">

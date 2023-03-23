@@ -14,9 +14,19 @@
         border-radius: 12px;
         border: 1px solid rgba(255, 255, 255, 0.125);
         text-decoration: none;
+        transition: 0.3s all ease;
+        &:hover {
+            transition: 0.3s all ease;
+            background-color: rgb(12, 14, 15);
+        }
         .CryptoNewsImg {
             width: 50%;
             height: auto;
+        }
+        p {
+            &:first-child {
+                color: red;
+            }
         }
     }
 }
@@ -78,6 +88,7 @@
 .NewsPanel {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
     gap: 35px;
 }
 

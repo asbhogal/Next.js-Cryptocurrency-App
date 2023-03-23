@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import moment from "moment/moment";
+import { LineWave } from "react-loader-spinner";
 import { IoMdNotifications } from "react-icons/io";
 
 import { useGetCryptoNewsQuery } from "../services/cryptoNewsApi";
@@ -15,7 +16,19 @@ const News = ({ simplified }) => {
   const cryptoNewsPlaceholder = "/assets/CryptoNewsPlaceholder.jpg",
         cryptoNewsProviderPlaceholder = "/assets/CryptoNewsProviderPlaceholder.svg";
 
-  if (!cryptoNews?.value) return 'Please wait, news is loading...'
+  if (!cryptoNews?.value) return <LineWave
+                                    height="100"
+                                    width="100"
+                                    color="#d9d9d9"
+                                    ariaLabel="line-wave"
+                                    wrapperStyle={{
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                        justifyContent: 'center',
+                                        width: '100%'
+                                    }}
+                                    visible={true}
+                                  />
 
   console.log(cryptoNews);
   

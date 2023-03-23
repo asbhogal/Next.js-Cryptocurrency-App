@@ -2,13 +2,28 @@
 
 import millify from "millify";
 import { useGetCryptoFullListQuery } from "../services/cryptoApi.js";
+import { LineWave } from "react-loader-spinner";
+import { Chart } from "chart.js";
+import CurrencyLineChart from "./CurrencyLineChart.jsx";
 
 const Cryptocurrencies = () => {
 
     const   { data, isFetching } = useGetCryptoFullListQuery(),
             cryptoCurrencies = data?.data?.coins;
     
-    if(isFetching) return 'Please wait, data loading...';
+    if(isFetching) return   <LineWave
+                                height="100"
+                                width="100"
+                                color="#d9d9d9"
+                                ariaLabel="line-wave"
+                                wrapperStyle={{
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    width: '100%'
+                                }}
+                                visible={true}
+                            />
 
     return (
         <div className="CryptocurrenciesTable">
@@ -33,6 +48,7 @@ const Cryptocurrencies = () => {
                         <span>{ `$ ${ millify(currency.price, { precision: 3, space: true } ) }` }</span>
                         <span>{ `$ ${ millify(currency.marketCap, { precision: 3, space: true } ) }` }</span>
                         <span>{ `${ millify(currency.change, { precision: 3 } ) } %` }</span>
+                        <span>{ currency.sparkline }</span>
                     </div>
                 )) }
             </div>

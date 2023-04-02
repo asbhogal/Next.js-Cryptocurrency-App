@@ -48,7 +48,7 @@ const Cryptocurrencies = () => {
                         <span>{ `$ ${ millify(currency.price, { precision: 3, space: true } ) }` }</span>
                         <span>{ `$ ${ millify(currency.marketCap, { precision: 3, space: true } ) }` }</span>
                         <span>{ `${ millify(currency.change, { precision: 3 } ) } %` }</span>
-                        <span>{ currency.sparkline }</span>
+                        {/* <span>{ currency.sparkline }</span> */}
                     </div>
                 )) }
             </div>

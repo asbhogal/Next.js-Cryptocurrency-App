@@ -62,8 +62,8 @@
 }
 
 .CryptoSnapshots {
-    justify-content: space-around;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(145px,1fr));
     gap: 20px;
     .CryptoSnapshot {
         display: flex;

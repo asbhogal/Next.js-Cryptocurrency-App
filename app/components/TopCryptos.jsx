@@ -6,7 +6,7 @@ import { useGetCryptosQuery } from "../services/cryptoApi.js";
 
 const TopCryptos = ({ simplified }) => {
 
-    const   count = simplified ? 10 : 100,
+    const   count = simplified ? 12 : 100,
             { data: cryptosList, isFetching } = useGetCryptosQuery(count),
             [cryptos, setCryptos] = useState([]),
             [searchTerm, setSearchTerm] = useState('');
@@ -16,6 +16,8 @@ const TopCryptos = ({ simplified }) => {
         const top10CurrentCryptos = cryptosList?.data?.coins;
 
         const filteredData = top10CurrentCryptos.filter((coin) => coin.name.toLowerCase().includes(searchTerm.toLowerCase()));
+
+        console.log(top10CurrentCryptos);
 
         setCryptos(filteredData);
 
@@ -56,7 +58,7 @@ const TopCryptos = ({ simplified }) => {
                         <div className="CryptoChange">
                             <p>Change:</p>
                             <p>{ `${ millify(currency.change, { precision: 3 } ) } %` }</p>
-                            {console.log((currency.change).slice(0, 1))}
+                            {/* {console.log((currency.change).slice(0, 1))} */}
                             {/* { ((currency.change).slice(0, 1)) === '-' 
                                 ? document.getElementsByClassName('CryptoChange').style.color = "Red" 
                                 : document.getElementsByClassName('CryptoChange').style.color = "Green"

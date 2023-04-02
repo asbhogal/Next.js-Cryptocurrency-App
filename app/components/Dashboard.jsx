@@ -8,7 +8,7 @@ import { TopCryptos } from "./index.js";
 
 const Dashboard = () => {
 
-    const   { data, isFetching } = useGetCryptosQuery(10),
+    const   { data, isFetching } = useGetCryptosQuery(12),
             globalStats = data?.data?.stats;
     
     if(isFetching) return   <LineWave

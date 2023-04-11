@@ -42,6 +42,10 @@
 .TopCryptosHeading {
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 20px;
+    h2 {
+        font-size: clamp(1.125rem, 0.328rem + 2.5505vw, 2.625rem);
+    }
 }
 
 .SearchCryptosInput {

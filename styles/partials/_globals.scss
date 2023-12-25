@@ -4,7 +4,7 @@
   &:is(&::after, &::before, *) {
     box-sizing: border-box;
   }
-  // outline: 1px solid red;
+  // outline: .0625rem solid red;
 }
 
 html {
@@ -14,7 +14,7 @@ html {
 body {
   background-color: black;
   display: flex;
-  max-width: 1920px;
+  max-width: 120rem;
   width: 100%;
   margin: 0 auto;
 }
@@ -22,5 +22,5 @@ body {
 .Content {
   flex-grow: 1;
   flex-direction: column;
-  padding: 0 40px;
+  padding: 0 2.5rem;
 }

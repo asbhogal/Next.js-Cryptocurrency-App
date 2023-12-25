@@ -1,7 +1,7 @@
 @use "../partials/variables" as *;
 
 .CryptoListIcon {
-  width: 35px;
+  width: 2.1875rem;
   height: auto;
 }
 
@@ -9,20 +9,20 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 30px;
-  padding: 50px;
+  gap: 1.875rem;
+  padding: 3.125rem;
   .TableContainer {
     display: grid;
-    gap: 25px;
+    gap: 1.5625rem;
   }
   .CryptocurrenciesRow {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     align-items: center;
     background-color: rgb(6 7 8 / 75%);
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.125);
-    padding: 5px 10px;
+    border-radius: 0.75rem;
+    border: 0.0625rem solid rgba(255, 255, 255, 0.125);
+    padding: 0.3125rem 0.625rem;
     transition: 0.3s all ease;
     cursor: pointer;
     &:hover {
@@ -33,14 +33,14 @@
   .TableHeadings {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    padding: 5px 10px;
+    padding: 0.3125rem 0.625rem;
   }
 }
 
 .CryptoListSnapshot {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 0.625rem;
 }
 
 .CryptoListNameAndSymbol {

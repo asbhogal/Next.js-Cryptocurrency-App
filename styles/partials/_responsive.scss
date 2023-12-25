@@ -1,10 +1,10 @@
-@media only screen and (width <= 700px) {
+@media only screen and (width <= 43.75rem) {
   body {
     flex-direction: column;
   }
   .Nav {
     height: 100%;
-    padding: 0 40px;
+    padding: 0 2.5rem;
     .NavList {
       flex-direction: row;
       width: auto;
@@ -15,7 +15,7 @@
   }
   .CryptoSnapshots .CryptoSnapshot {
     p {
-      font-size: 18px;
+      font-size: 1.125rem;
     }
   }
 }

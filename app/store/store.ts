@@ -1,6 +1,6 @@
 "use client";
 
-import { configureStore, middleware } from "@reduxjs/toolkit";
+import { configureStore } from "@reduxjs/toolkit";
 
 import { cryptoApi } from "../services/cryptoApi";
 import { cryptoExchangesApi } from "../services/cryptoExchangesApi";

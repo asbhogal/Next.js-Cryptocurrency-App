@@ -2,18 +2,19 @@
 
 import { useState, useEffect } from "react";
 import millify from "millify";
-import { useGetCryptosQuery } from "../services/cryptoApi.js";
+import { useGetCryptosQuery } from "../services/cryptoApi";
+import { CoinType, CryptoCurrencyType } from "@/utils/types";
 
-const TopCryptos = ({ simplified }) => {
+const TopCryptos = ({ simplified }: { simplified: boolean }) => {
   const count = simplified ? 12 : 100,
-    { data: cryptosList, isFetching } = useGetCryptosQuery(count),
+    { data: cryptosList } = useGetCryptosQuery(count),
     [cryptos, setCryptos] = useState([]),
     [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
     const top10CurrentCryptos = cryptosList?.data?.coins;
 
-    const filteredData = top10CurrentCryptos.filter((coin) =>
+    const filteredData = top10CurrentCryptos.filter((coin: CoinType) =>
       coin.name.toLowerCase().includes(searchTerm.toLowerCase())
     );
 
@@ -35,7 +36,7 @@ const TopCryptos = ({ simplified }) => {
         </div>
       </div>
       <div className="TopCryptosListContainer">
-        {cryptos?.map((currency) => (
+        {cryptos?.map((currency: CryptoCurrencyType) => (
           <div className="TopCryptosCard" key={currency.uuid}>
             <div className="CryptoInfo">
               <div className="CryptoNameAndRank">

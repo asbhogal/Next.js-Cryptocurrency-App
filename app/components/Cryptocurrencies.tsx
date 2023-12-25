@@ -1,13 +1,12 @@
 "use client";
 
 import millify from "millify";
-import { useGetCryptoFullListQuery } from "../services/cryptoApi.js";
+import { useGetCryptoFullListQuery } from "../services/cryptoApi";
 import { LineWave } from "react-loader-spinner";
-import { Chart } from "chart.js";
-import CurrencyLineChart from "./CurrencyLineChart.jsx";
+import { CryptoCurrencyType } from "@/utils/types";
 
 const Cryptocurrencies = () => {
-  const { data, isFetching } = useGetCryptoFullListQuery(),
+  const { data, isFetching } = useGetCryptoFullListQuery({}),
     cryptoCurrencies = data?.data?.coins;
 
   if (isFetching)
@@ -37,7 +36,7 @@ const Cryptocurrencies = () => {
           <span>Market Cap</span>
           <span>Change</span>
         </div>
-        {cryptoCurrencies.map((currency) => (
+        {cryptoCurrencies.map((currency: CryptoCurrencyType) => (
           <div className="CryptocurrenciesRow" key={currency.uuid}>
             <div className="CryptoListSnapshot">
               {currency.rank}

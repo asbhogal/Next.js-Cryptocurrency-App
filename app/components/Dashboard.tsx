@@ -2,9 +2,9 @@
 
 import millify from "millify";
 import { LineWave } from "react-loader-spinner";
-import { useGetCryptosQuery } from "../services/cryptoApi.js";
+import { useGetCryptosQuery } from "../services/cryptoApi";
 import { IoMdNotifications } from "react-icons/io";
-import { TopCryptos } from "./index.js";
+import { TopCryptos } from "./index";
 
 const Dashboard = () => {
   const { data, isFetching } = useGetCryptosQuery(12),

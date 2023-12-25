@@ -1,22 +1,25 @@
 "use client";
 
 import Link from "next/link";
-import moment from "moment/moment";
 import { LineWave } from "react-loader-spinner";
 import { IoMdNotifications } from "react-icons/io";
 
 import { useGetCryptoNewsQuery } from "@/services/cryptoNewsApi";
+import { formatDate } from "@/utils/functions";
+import { NewsData } from "@/utils/types";
 
-const News = ({ simplified }: { simplified: boolean }) => {
+const News = () => {
   const { data: cryptoNews } = useGetCryptoNewsQuery({
-    newsCategory: "Crypto",
-    count: simplified ? 6 : 20,
+    newsCategory: "crypto",
   });
 
-  const cryptoNewsPlaceholder = "/assets/CryptoNewsPlaceholder.jpg",
-    cryptoNewsProviderPlaceholder = "/assets/CryptoNewsProviderPlaceholder.svg";
+  const cryptoNewsPlaceholder = "/assets/CryptoNewsPlaceholder.jpg";
+  const cryptoNewsProviderPlaceholder =
+    "/assets/CryptoNewsProviderPlaceholder.svg";
 
-  if (!cryptoNews?.value)
+  console.log(cryptoNews);
+
+  if (!cryptoNews)
     return (
       <LineWave
         height="100"
@@ -32,8 +35,6 @@ const News = ({ simplified }: { simplified: boolean }) => {
         visible={true}
       />
     );
-
-  console.log(cryptoNews);
 
   return (
     <div className="NewsPanel">
@@ -53,36 +54,28 @@ const News = ({ simplified }: { simplified: boolean }) => {
         </div>
       </div>
       <div className="News">
-        {cryptoNews.value.map((news, i) => (
+        {cryptoNews?.data?.map((news: NewsData) => (
           <Link
             className="CryptoNewsCard"
-            key={i}
-            href={news.url}
+            key={news.uuid}
+            href={news?.url}
             target="_blank"
+            rel="noopener noreferrer"
           >
             <img
               className="CryptoNewsImg"
-              src={news?.image?.thumbnail?.contentUrl || cryptoNewsPlaceholder}
+              src={news.image_url || cryptoNewsPlaceholder}
+              alt={`A snapshot image from ${news.source}`}
             />
-            <p>{news.name}</p>
-            <p>
-              {news.description > 100
-                ? `${news.description.subString(0, 100)}...`
-                : news.description}
-            </p>
+            <p className="NewsTitle">{news.title}</p>
             <div className="NewsProviderDetails">
-              <div className="NewsProviderLogo">
-                <img
-                  src={
-                    news.provider[0]?.image?.thumbnail?.contentUrl ||
-                    cryptoNewsProviderPlaceholder
-                  }
-                />
+              <p>{news.description}</p>
+              <div className="NewsGutter">
+                <p className="NewsProviderName">{news.source}</p>
+                <p className="NewsDatePublished">
+                  {formatDate(news.published_at)}
+                </p>
               </div>
-              <p className="NewsProviderName">{news.provider[0].name}</p>
-              <p className="NewsDatePublished">
-                {moment(news.datePublished).startOf("ss").fromNow()}
-              </p>
             </div>
           </Link>
         ))}

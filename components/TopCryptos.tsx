@@ -18,8 +18,6 @@ const TopCryptos = ({ simplified }: { simplified: boolean }) => {
       coin.name.toLowerCase().includes(searchTerm.toLowerCase())
     );
 
-    console.log(top10CurrentCryptos);
-
     setCryptos(filteredData);
   }, [cryptosList, searchTerm]);
 

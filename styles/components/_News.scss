@@ -21,15 +21,20 @@
       background-color: rgb(12, 14, 15);
     }
     .CryptoNewsImg {
-      width: 50%;
+      width: auto;
       height: auto;
     }
-    p {
-      &:first-child {
-        color: red;
-      }
-    }
   }
+}
+
+.NewsTitle {
+  text-transform: uppercase;
+}
+
+.NewsGutter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .DashboardHeading {
@@ -99,7 +104,7 @@
 
 .NewsProviderDetails {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   gap: 1.25rem;
 }
 

@@ -40,7 +40,11 @@ const Cryptocurrencies = () => {
           <div className="CryptocurrenciesRow" key={currency.uuid}>
             <div className="CryptoListSnapshot">
               {currency.rank}
-              <img className="CryptoListIcon" src={currency.iconUrl} />
+              <img
+                className="CryptoListIcon"
+                src={currency.iconUrl}
+                alt={`icon for ${currency.name} cryptocurrency`}
+              />
               <div className="CryptoListNameAndSymbol">
                 <span>{currency.name}</span>
                 <span>{currency.symbol}</span>

@@ -13,7 +13,7 @@ const Navbar = () => {
     <nav className="Nav">
       <div className="LogoContainer">
         <h1 className="MainHeading">cryptoverse</h1>
-        <img src="/assets/Cryptoverse-Icon.svg" />
+        <img src="/assets/Cryptoverse-Icon.svg" alt="Cryptoverse logo" />
       </div>
       <ul className="NavList">
         <li className="NavListItem">

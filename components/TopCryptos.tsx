@@ -44,7 +44,10 @@ const TopCryptos = ({ simplified }: { simplified: boolean }) => {
                 <p className="CryptoName">{currency.name}</p>
               </div>
               <div className="CryptoIcon">
-                <img src={currency.iconUrl} />
+                <img
+                  src={currency.iconUrl}
+                  alt={`icon for ${currency.name} cryptocurrency`}
+                />
               </div>
             </div>
             <div className="CryptoPrice">

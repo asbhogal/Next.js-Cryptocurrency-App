@@ -48,7 +48,11 @@ const Exchanges = () => {
               >
                 <div className="ExchangesListSnapshot">
                   <span>{exchanges.trust_score_rank}</span>
-                  <img className="ExchangeListIcon" src={exchanges.image} />
+                  <img
+                    className="ExchangeListIcon"
+                    src={exchanges.image}
+                    alt={`icon for ${exchanges.name} cryptocurrency`}
+                  />
                   <div className="ExchangeListName">{exchanges.name}</div>
                 </div>
                 <span>{exchanges.trust_score}</span>

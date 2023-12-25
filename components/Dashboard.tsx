@@ -2,7 +2,7 @@
 
 import millify from "millify";
 import { LineWave } from "react-loader-spinner";
-import { useGetCryptosQuery } from "../services/cryptoApi";
+import { useGetCryptosQuery } from "@/services/cryptoApi";
 import { IoMdNotifications } from "react-icons/io";
 import { TopCryptos } from "./index";
 

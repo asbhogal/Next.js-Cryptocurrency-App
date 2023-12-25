@@ -1,7 +1,7 @@
 "use client";
 
 import millify from "millify";
-import { useGetCryptoFullListQuery } from "../services/cryptoApi";
+import { useGetCryptoFullListQuery } from "@/services/cryptoApi";
 import { LineWave } from "react-loader-spinner";
 import { CryptoCurrencyType } from "@/utils/types";
 

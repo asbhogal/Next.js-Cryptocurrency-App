@@ -5,7 +5,7 @@ import moment from "moment/moment";
 import { LineWave } from "react-loader-spinner";
 import { IoMdNotifications } from "react-icons/io";
 
-import { useGetCryptoNewsQuery } from "../services/cryptoNewsApi";
+import { useGetCryptoNewsQuery } from "@/services/cryptoNewsApi";
 
 const News = ({ simplified }: { simplified: boolean }) => {
   const { data: cryptoNews } = useGetCryptoNewsQuery({

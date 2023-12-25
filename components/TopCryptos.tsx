@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import millify from "millify";
-import { useGetCryptosQuery } from "../services/cryptoApi";
+import { useGetCryptosQuery } from "@/services/cryptoApi";
 import { CoinType, CryptoCurrencyType } from "@/utils/types";
 
 const TopCryptos = ({ simplified }: { simplified: boolean }) => {

@@ -1,6 +1,6 @@
 "use client";
 
-import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/dist/query/react";
+import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 const cryptoExchangeApiHeaders = {
   "X-RapidAPI-Key": process.env.NEXT_PUBLIC_COINGECKO_RAPID_API_KEY,

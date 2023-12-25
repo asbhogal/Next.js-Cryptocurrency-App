@@ -1,8 +1,6 @@
 "use client";
 
 import { useGetCryptoFullListQuery } from "../services/cryptoApi.js";
-import { Chart } from "react-chartjs-2";
-import { Line } from "react-chartjs-2";
 
 /* const CurrencyLineChart = () => {
 

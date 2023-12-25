@@ -6,7 +6,7 @@ import { useGetCryptosQuery } from "@/services/cryptoApi";
 import { CoinType, CryptoCurrencyType } from "@/utils/types";
 
 const TopCryptos = ({ simplified }: { simplified: boolean }) => {
-  const count = simplified ? 12 : 100,
+  const count = simplified ? 10 : 100,
     { data: cryptosList } = useGetCryptosQuery(count),
     [cryptos, setCryptos] = useState([]),
     [searchTerm, setSearchTerm] = useState("");

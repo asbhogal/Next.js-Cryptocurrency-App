@@ -49,18 +49,23 @@
   }
 }
 
-.SearchCryptosInput {
-  outline: none;
-  border: none;
-  background-color: rgb(6 7 8 / 75%);
-  border-radius: 0.75rem;
-  border: 0.0625rem solid rgba(255, 255, 255, 0.125);
-  padding: 0.625rem 0.9375rem;
-  color: white;
-  caret-color: white;
-  cursor: pointer;
-  &::placeholder {
+.SearchCryptos {
+  max-width: 250px;
+  width: 100%;
+  .SearchCryptosInput {
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: rgb(6 7 8 / 75%);
+    border-radius: 0.75rem;
+    border: 0.0625rem solid rgba(255, 255, 255, 0.125);
+    padding: 0.625rem 0.9375rem;
     color: white;
-    opacity: 0.5;
+    caret-color: white;
+    cursor: pointer;
+    &::placeholder {
+      color: white;
+      opacity: 0.5;
+    }
   }
 }

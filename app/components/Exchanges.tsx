@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { LineWave } from "react-loader-spinner";
 import { useGetCryptoExchangesQuery } from "../services/cryptoExchangesApi";
+import { ExchangeType } from "@/utils/types";
 
 const Exchanges = () => {
   const { data, isFetching } = useGetCryptoExchangesQuery({ count: 10 }),
@@ -38,22 +39,23 @@ const Exchanges = () => {
             <span>24hr Trade Vol. (Normalized)</span>
             <span>24hr Trade Vol.</span>
           </div>
-          {exchangeData.map((exchanges) => (
-            <Link
-              className="ExchangesRow"
-              key={exchanges.id}
-              href={exchanges.url}
-            >
-              <div className="ExchangesListSnapshot">
-                <span>{exchanges.trust_score_rank}</span>
-                <img className="ExchangeListIcon" src={exchanges.image} />
-                <div className="ExchangeListName">{exchanges.name}</div>
-              </div>
-              <span>{exchanges.trust_score}</span>
-              <span>{exchanges.trade_volume_24h_btc}</span>
-              <span>{exchanges.trade_volume_24h_btc_normalized}</span>
-            </Link>
-          ))}
+          {exchangeData &&
+            exchangeData.map((exchanges: ExchangeType) => (
+              <Link
+                className="ExchangesRow"
+                key={exchanges.id}
+                href={exchanges.url}
+              >
+                <div className="ExchangesListSnapshot">
+                  <span>{exchanges.trust_score_rank}</span>
+                  <img className="ExchangeListIcon" src={exchanges.image} />
+                  <div className="ExchangeListName">{exchanges.name}</div>
+                </div>
+                <span>{exchanges.trust_score}</span>
+                <span>{exchanges.trade_volume_24h_btc}</span>
+                <span>{exchanges.trade_volume_24h_btc_normalized}</span>
+              </Link>
+            ))}
         </div>
       </div>
     </div>

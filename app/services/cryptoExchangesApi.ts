@@ -3,11 +3,11 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/dist/query/react";
 
 const cryptoExchangeApiHeaders = {
-  "X-RapidAPI-Key": "190ed1891dmsh0f339dde7266f5ep1901a8jsn1a4adbdef18d",
-  "X-RapidAPI-Host": "coingecko.p.rapidapi.com",
+  "X-RapidAPI-Key": process.env.NEXT_PUBLIC_COINGECKO_RAPID_API_KEY,
+  "X-RapidAPI-Host": process.env.NEXT_PUBLIC_COINGECKO_RAPID_API_HOST,
 };
 
-const baseUrl = "https://coingecko.p.rapidapi.com";
+const baseUrl = process.env.NEXT_PUBLIC_COINGECKO_RAPID_API_URL;
 
 const createRequest = (url: string) => ({
   url,
@@ -19,7 +19,7 @@ export const cryptoExchangesApi = createApi({
   baseQuery: fetchBaseQuery({ baseUrl }),
   endpoints: (builder) => ({
     getCryptoExchanges: builder.query({
-      query: (count) => createRequest(`/exchanges?per_page=${count}`),
+      query: ({ count }) => createRequest(`?per_page=${count}`),
     }),
   }),
 });

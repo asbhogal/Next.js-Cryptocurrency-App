@@ -19,3 +19,14 @@ export type CoinType = {
   price: number;
   symbol: string;
 };
+
+export type ExchangeType = {
+  id: string;
+  url: string;
+  name: string;
+  image: string;
+  trade_volume_24h_btc: number;
+  trust_score: number;
+  trust_score_rank: number;
+  trade_volume_24h_btc_normalized: number;
+};

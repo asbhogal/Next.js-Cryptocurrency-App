@@ -7,7 +7,6 @@ import {
   BsNewspaper,
 } from "react-icons/bs";
 import { BiHomeAlt2 } from "react-icons/bi";
-import "@/app/styles/index.scss";
 
 const Navbar = () => {
   return (

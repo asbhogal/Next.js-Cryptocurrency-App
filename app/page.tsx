@@ -4,7 +4,6 @@ export const metadata = {
 };
 
 import { Dashboard, Navbar } from "../components";
-import "./styles/index.scss";
 
 export default function App() {
   return (

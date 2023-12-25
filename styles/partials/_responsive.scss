@@ -1,15 +1,15 @@
 @media only screen and (width <= 700px) {
-  .App {
+  body {
     flex-direction: column;
-    .Nav {
-      height: 100%;
-      padding: 0 40px;
-      .NavList {
-        flex-direction: row;
-        width: auto;
-        .NavListItem > a > p {
-          display: none;
-        }
+  }
+  .Nav {
+    height: 100%;
+    padding: 0 40px;
+    .NavList {
+      flex-direction: row;
+      width: auto;
+      .NavListItem > a > p {
+        display: none;
       }
     }
   }

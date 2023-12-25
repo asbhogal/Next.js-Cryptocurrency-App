@@ -13,6 +13,10 @@ html {
 
 body {
   background-color: black;
+  display: flex;
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .Content {

@@ -4,10 +4,5 @@ import { Navbar } from "@/components";
 import Exchanges from "@/components/Exchanges";
 
 export default function page() {
-  return (
-    <>
-      <Navbar />
-      <Exchanges />
-    </>
-  );
+  return <Exchanges />;
 }

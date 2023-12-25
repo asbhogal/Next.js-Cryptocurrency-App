@@ -7,7 +7,7 @@ import { IoMdNotifications } from "react-icons/io";
 import { TopCryptos } from "./index";
 
 const Dashboard = () => {
-  const { data, isFetching } = useGetCryptosQuery(12),
+  const { data, isFetching } = useGetCryptosQuery(10),
     globalStats = data?.data?.stats;
 
   if (isFetching)

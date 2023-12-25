@@ -1,9 +1,11 @@
-export const metadata = {
+"use client";
+
+const metadata: Metadata = {
   title: "Cryptoverse | Dashboard",
-  favicon: "/favicon.ico",
 };
 
-import { Dashboard, Navbar } from "../components";
+import { Dashboard } from "@/components";
+import { Metadata } from "next";
 
 export default function App() {
   return <Dashboard />;

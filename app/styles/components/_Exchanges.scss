@@ -1,44 +1,44 @@
-@use '../partials/variables' as *;
+@use "../partials/variables" as *;
 
 .ExchangesPanel {
-    flex-grow: 1;
-    padding: 50px;
+  flex-grow: 1;
+  padding: 50px;
 }
 
 .ExchangesTable {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 30px;
-    width: 100%;
-    .TableContainer {
-        display: grid;
-        grid-gap: 25px;
-        gap: 25px;
-        .TableHeadings {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            padding: 5px 10px;
-        }
-        .ExchangesRow {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            align-items: center;
-            background-color: rgba(6, 7, 8, 0.75);
-            border-radius: 12px;
-            border: 1px solid rgba(255, 255, 255, 0.125);
-            padding: 5px 10px;
-            text-decoration: none;
-            transition: 0.3s all ease;
-            &:hover {
-                transition: 0.3s all ease;
-                background-color: rgb(12, 14, 15);
-            }
-            .ExchangesListSnapshot {
-                display: flex;
-                align-items: center;
-                gap: 10px;
-            }
-        }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+  .TableContainer {
+    display: grid;
+    grid-gap: 25px;
+    gap: 25px;
+    .TableHeadings {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      padding: 5px 10px;
     }
+    .ExchangesRow {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      align-items: center;
+      background-color: rgba(6, 7, 8, 0.75);
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.125);
+      padding: 5px 10px;
+      text-decoration: none;
+      transition: 0.3s all ease;
+      &:hover {
+        transition: 0.3s all ease;
+        background-color: rgb(12, 14, 15);
+      }
+      .ExchangesListSnapshot {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+    }
+  }
 }

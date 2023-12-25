@@ -1,7 +1,5 @@
-'use client';
+"use client";
 
 export default function page() {
-  return (
-    <div>DASHBOARD</div>
-  )
+  return <div>DASHBOARD</div>;
 }

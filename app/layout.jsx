@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import store from "./store/store.js";
 import { Provider } from "react-redux";
@@ -8,12 +8,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-      <div className="App">
-      <Provider store={ store }>
-        { children }
-      </Provider>
-      </div>
+        <div className="App">
+          <Provider store={store}>{children}</Provider>
+        </div>
       </body>
     </html>
-  )
+  );
 }

@@ -1,9 +1,9 @@
-@use '../partials/variables' as *;
+@use "../partials/variables" as *;
 
 .App {
+  display: flex;
+  background-color: #000;
+  > * {
     display: flex;
-    background-color: #000;
-    > * {
-        display: flex;
-    }
+  }
 }

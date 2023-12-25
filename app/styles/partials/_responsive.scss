@@ -1,21 +1,21 @@
 @media only screen and (width <= 700px) {
-    .App {
-        flex-direction: column;
-        .Nav {
-            height: 100%;
-            padding: 0 40px;
-            .NavList {
-                flex-direction: row;
-                width: auto;
-                .NavListItem > a > p {
-                    display: none;
-                }
-            }
+  .App {
+    flex-direction: column;
+    .Nav {
+      height: 100%;
+      padding: 0 40px;
+      .NavList {
+        flex-direction: row;
+        width: auto;
+        .NavListItem > a > p {
+          display: none;
         }
+      }
     }
-    .CryptoSnapshots .CryptoSnapshot {
-        p {
-            font-size: 18px;
-        }
+  }
+  .CryptoSnapshots .CryptoSnapshot {
+    p {
+      font-size: 18px;
     }
+  }
 }

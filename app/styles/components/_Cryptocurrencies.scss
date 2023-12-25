@@ -1,54 +1,54 @@
-@use '../partials/variables' as *;
+@use "../partials/variables" as *;
 
 .CryptoListIcon {
-    width: 35px;
-    height: auto;
+  width: 35px;
+  height: auto;
 }
 
 .CryptocurrenciesTable {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 30px;
-    padding: 50px;
-    .TableContainer {
-        display: grid;
-        gap: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px;
+  .TableContainer {
+    display: grid;
+    gap: 25px;
+  }
+  .CryptocurrenciesRow {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    background-color: rgb(6 7 8 / 75%);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    padding: 5px 10px;
+    transition: 0.3s all ease;
+    cursor: pointer;
+    &:hover {
+      transition: 0.3s all ease;
+      background-color: rgb(12, 14, 15);
     }
-    .CryptocurrenciesRow {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        align-items: center;
-        background-color: rgb(6 7 8 / 75%);
-        border-radius: 12px;
-        border: 1px solid rgba(255, 255, 255, 0.125);
-        padding: 5px 10px;
-        transition: 0.3s all ease;
-        cursor: pointer;
-        &:hover {
-            transition: 0.3s all ease;
-            background-color: rgb(12, 14, 15);
-        }
-    }
-    .TableHeadings {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        padding: 5px 10px;
-    }
+  }
+  .TableHeadings {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 5px 10px;
+  }
 }
 
 .CryptoListSnapshot {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .CryptoListNameAndSymbol {
-    display: flex;
-    flex-direction: column;
-    span {
-        &:nth-child(2) {
-            font-weight: 200;
-        }
+  display: flex;
+  flex-direction: column;
+  span {
+    &:nth-child(2) {
+      font-weight: 200;
     }
+  }
 }

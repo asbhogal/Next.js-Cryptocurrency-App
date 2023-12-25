@@ -1,13 +1,12 @@
-'use client';
+"use client";
 
-import { Navbar, Cryptocurrencies } from '@/app/components/index.js';
+import { Navbar, Cryptocurrencies } from "@/app/components/index.js";
 
 export default function page() {
   return (
-      <>
-        <Navbar />
-        <Cryptocurrencies />
-      </>
-      
-  )
+    <>
+      <Navbar />
+      <Cryptocurrencies />
+    </>
+  );
 }

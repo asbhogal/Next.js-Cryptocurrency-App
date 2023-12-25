@@ -1,12 +1,12 @@
 "use client";
 
-import { Navbar, News } from "@/app/components";
+import { Navbar, Cryptocurrencies } from "@/components/index";
 
 export default function page() {
   return (
     <>
       <Navbar />
-      <News />
+      <Cryptocurrencies />
     </>
   );
 }

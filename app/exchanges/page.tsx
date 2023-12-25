@@ -1,7 +1,7 @@
 "use client";
 
-import { Navbar } from "@/app/components";
-import Exchanges from "@/app/components/Exchanges";
+import { Navbar } from "@/components";
+import Exchanges from "@/components/Exchanges";
 
 export default function page() {
   return (

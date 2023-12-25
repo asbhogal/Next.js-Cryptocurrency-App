@@ -7,7 +7,7 @@ import { IoMdNotifications } from "react-icons/io";
 
 import { useGetCryptoNewsQuery } from "../services/cryptoNewsApi";
 
-const News = ({ simplified }) => {
+const News = ({ simplified }: { simplified: boolean }) => {
   const { data: cryptoNews } = useGetCryptoNewsQuery({
     newsCategory: "Crypto",
     count: simplified ? 6 : 20,

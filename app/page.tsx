@@ -3,7 +3,7 @@ export const metadata = {
   favicon: "/favicon.ico",
 };
 
-import { Dashboard, Navbar } from "./components";
+import { Dashboard, Navbar } from "../components";
 import "./styles/index.scss";
 
 export default function App() {

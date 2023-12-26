@@ -1,0 +1,40 @@
+@use "../partials/variables" as *;
+
+.ExchangesPanel {
+  flex-grow: 1;
+  padding: 3.125rem;
+}
+
+.ExchangesTable {
+  display: flex;
+  flex-direction: column;
+  gap: 1.875rem;
+  width: 100%;
+  .TableContainer {
+    display: grid;
+    grid-gap: 1.5625rem;
+    gap: 1.5625rem;
+    .TableHeadings {
+      grid-template-columns: repeat(4, 1fr);
+      padding: 0.3125rem 0.625rem;
+    }
+    .ExchangesRow {
+      display: grid;
+      align-items: center;
+      background-color: rgba(6, 7, 8, 0.75);
+      border-radius: 0.75rem;
+      border: 0.0625rem solid rgba(255, 255, 255, 0.125);
+      text-decoration: none;
+      transition: 0.3s all ease;
+      &:hover {
+        transition: 0.3s all ease;
+        background-color: rgb(12, 14, 15);
+      }
+      .ExchangesListSnapshot {
+        display: flex;
+        align-items: center;
+        gap: 0.625rem;
+      }
+    }
+  }
+}

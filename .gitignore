@@ -1,16 +1,48 @@
-### NPM PACKAGES ###
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+.yarn/install-state.gz
 
-node_modules
+# testing
+/coverage
 
-### NEXT.JS ###
+# next.js
+/.next/
+/out/
 
-.next
-out
+# production
+/build
 
-### ENV FILES ###
+# misc
+.DS_Store
+*.pem
 
-.env
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-### NOTES ###
+# local env files
+.env*.local
 
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+## NOTES ##
+
+/notes
+/omitted-code
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
 notes.txt
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/

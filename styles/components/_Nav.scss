@@ -1,0 +1,54 @@
+@use "../partials/variables" as *;
+
+.Nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.3125rem;
+  gap: 2.1875rem;
+  > * {
+    display: flex;
+  }
+  .LogoContainer {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 1.25rem;
+    padding-top: 1.25rem;
+    .MainHeading {
+      font-size: 1.125rem;
+      text-transform: uppercase;
+      letter-spacing: 0.25rem;
+    }
+    img {
+      width: 15%;
+      height: auto;
+    }
+  }
+  .NavList {
+    flex-direction: column;
+    gap: 1.25rem;
+    font-weight: 200;
+    .NavListItem {
+      list-style-type: none;
+      padding: 0.625rem;
+      border-radius: 0.3125rem;
+      cursor: pointer;
+      transition: 0.3s all ease-in;
+      border: 0.0625rem solid transparent;
+      &:hover {
+        background-color: rgb(6 7 8 / 75%);
+        border-radius: 0.75rem;
+        border: 0.0625rem solid #fdfdfd;
+        transition: 0.3s all ease-in;
+      }
+      a {
+        display: flex;
+        align-items: center;
+        gap: 0.625rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+      }
+    }
+  }
+}

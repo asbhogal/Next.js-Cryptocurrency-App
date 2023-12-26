@@ -1,0 +1,71 @@
+@use "../partials/variables" as *;
+
+.TopCryptosListContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14.0625rem, 1fr));
+  gap: 1.25rem;
+  .TopCryptosCard {
+    display: grid;
+    gap: 0.625rem;
+    padding: 1.5625rem;
+    background-color: rgb(6 7 8 / 75%);
+    border-radius: 0.75rem;
+    border: 0.0625rem solid rgba(255, 255, 255, 0.125);
+    transition: 0.3s all ease;
+    &:hover {
+      transition: 0.3s all ease;
+      background-color: rgb(12, 14, 15);
+    }
+    div {
+      display: flex;
+      justify-content: space-between;
+    }
+    .CryptoInfo {
+      align-items: center;
+      padding-bottom: 0.9375rem;
+      .CryptoNameAndRank {
+        display: flex;
+        gap: 0.9375rem;
+        font-size: 1.125rem;
+      }
+      .CryptoIcon {
+        display: flex;
+        img {
+          height: 2.1875rem;
+          width: auto;
+        }
+      }
+    }
+  }
+}
+
+.TopCryptosHeading {
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  h2 {
+    font-size: clamp(1.125rem, 0.328rem + 2.5505vw, 2.625rem);
+  }
+}
+
+.SearchCryptos {
+  max-width: 250px;
+  width: 100%;
+  .SearchCryptosInput {
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: rgb(6 7 8 / 75%);
+    border-radius: 0.75rem;
+    border: 0.0625rem solid rgba(255, 255, 255, 0.125);
+    padding: 0.625rem 0.9375rem;
+    color: white;
+    caret-color: white;
+    cursor: pointer;
+    &::placeholder {
+      color: white;
+      opacity: 0.5;
+    }
+  }
+}

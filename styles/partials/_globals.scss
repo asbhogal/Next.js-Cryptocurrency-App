@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  &:is(&::after, &::before, *) {
+    box-sizing: border-box;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
+  display: flex;
+  max-width: 120rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.Content {
+  flex-grow: 1;
+  flex-direction: column;
+  padding: 0 2.1875rem;
+}

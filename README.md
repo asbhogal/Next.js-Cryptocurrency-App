@@ -6,11 +6,14 @@
 
 </div>
 
-A Cryptoverse application which pulls API data from the Coinranking, Bing News and RapidAPI endpoints. This has been built using Next.js, React, Redux, Axios, SCSS and deployed via Vercel. This repo is currently under development.
+A cryptocurrency application which pulls API data from the Coinranking, Coin Gecko and The News API. This has been built using TypeScript, Next.js, React, Redux, Axios, SCSS and deployed via Vercel.
 
 <strong>Features</strong>
- - Built using Next.js, React and Redux
- - Uses the Coinranking, Bing News and RapidAPI APIs
+ - Built using Next.js, React, TypeScript and Redux
+ - Uses the Coinranking, Coin Gecko & The News APIs
+ - Displays cryptocurrency, exchange and news data, incl. top 10 cryptos
+ - E2E and a11y testing across multiple browsers using Playwright
+ - Husky to run lint and testing prior to Git Commit
  - Stylish, modern UI
  - Fully responsive
  - Optimized for the web
@@ -18,11 +21,13 @@ A Cryptoverse application which pulls API data from the Coinranking, Bing News a
 <strong>Stacks & Tools</strong>
 <br>
 <br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/devicons/devicon/blob/master/icons/typescript/typescript-original.svg"><img src="https://github.com/devicons/devicon/blob/master/icons/typescript/typescript-original.svg" alt="TypeScript logo" width="50" height="50" style="max-width:100%;"></a>
 <a target="_blank" rel="noopener noreferrer" href="https://github.com/devicons/devicon/blob/master/icons/nextjs/nextjs-original.svg"><img src="https://github.com/devicons/devicon/blob/master/icons/nextjs/nextjs-original.svg" alt="nextjs logo" width="50" height="50" style="max-width:100%;"></a>
 <a target="_blank" rel="noopener noreferrer" href="https://github.com/devicons/devicon/blob/master/icons/react/react-original.svg"><img src="https://github.com/devicons/devicon/blob/master/icons/react/react-original.svg" alt="react logo" width="50" height="50" style="max-width:100%;"></a>
 <a target="_blank" rel="noopener noreferrer" href="https://github.com/devicons/devicon/blob/master/icons/redux/redux-original.svg"><img src="https://github.com/devicons/devicon/blob/master/icons/redux/redux-original.svg" alt="redux logo" width="50" height="50" style="max-width:100%;"></a>
 <a target="_blank" rel="noopener noreferrer" href="https://github.com/devicons/devicon/blob/master/icons/sass/sass-original.svg"><img src="https://github.com/devicons/devicon/blob/master/icons/sass/sass-original.svg" alt="sass logo" width="50" height="50" style="max-width:100%;"></a>
-<a target="_blank" rel="noopener noreferrer" href="https://github.com/devicons/devicon/blob/master/icons/figma/figma-original.svg"><img src="https://github.com/devicons/devicon/blob/master/icons/figma/figma-original.svg" alt="Figma logo" width="50" height="50" style="max-width:100%;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/devicons/devicon/blob/master/icons/eslint/eslint-original.svg"><img src="https://github.com/devicons/devicon/blob/master/icons/eslint/eslint-original.svg" alt="ES Lint logo" width="50" height="50" style="max-width:100%;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://playwright.dev/img/playwright-logo.svg"><img src="https://playwright.dev/img/playwright-logo.svg" alt="Playwright logo" width="50" height="50" style="max-width:100%;"></a>
 
 
 <strong>Links</strong>
@@ -31,4 +36,4 @@ A Cryptoverse application which pulls API data from the Coinranking, Bing News a
 
  <strong>Disclaimer</strong>
 
- The term 'Cryptoverse' is used purely here for fictional, non-commercial/personal work and any resemblance to existing trademarks are purely coincidental. All trademarks used herein remain the sole copyright and ownership of the original holders and are used here for personal, non-commercial purposes.
+ The term 'Cryptoverse' is used purely here for demonstratice, non-commercial purposes and any resemblance to existing trademarks are purely coincidental. All trademarks used herein remain the sole copyright and ownership of the original holders and are used here for demonstrative, non-commercial purposes.

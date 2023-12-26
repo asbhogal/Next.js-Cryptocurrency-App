@@ -1,0 +1,47 @@
+@media only screen and (width <= 700px) {
+  .CryptoSnapshots .CryptoSnapshot {
+    p {
+      font-size: 18px;
+    }
+  }
+  .CryptocurrenciesRow,
+  .ExchangesRow {
+    grid-template-columns: auto;
+    gap: 15px;
+    padding: 0.9375rem;
+  }
+  .TableHeadings {
+    display: none;
+  }
+}
+
+@media only screen and (width > 700px) {
+  .CryptocurrencyMobileHeading {
+    display: none;
+  }
+  .CryptocurrenciesRow,
+  .ExchangesRow {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0.3125rem 0.625rem;
+  }
+  .TableHeadings {
+    display: grid;
+  }
+}
+
+@media only screen and (width <= 56.25rem) {
+  body {
+    flex-direction: column;
+  }
+  .Nav {
+    height: 100%;
+    padding: 0 35px;
+    .NavList {
+      flex-direction: row;
+      width: auto;
+      .NavListItem > a > p {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,131 @@
+@use "../partials/variables" as *;
+
+.News {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
+  gap: 1.25rem;
+  .CryptoNewsCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1.25rem;
+    padding: 0.9375rem;
+    background-color: rgb(6 7 8 / 75%);
+    border-radius: 0.75rem;
+    border: 0.0625rem solid rgba(255, 255, 255, 0.125);
+    text-decoration: none;
+    transition: 0.3s all ease;
+    &:hover {
+      transition: 0.3s all ease;
+      background-color: rgb(12, 14, 15);
+    }
+    .CryptoNewsImg {
+      width: auto;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 0.5625rem;
+    }
+  }
+}
+
+.NewsTitle {
+  text-transform: uppercase;
+}
+
+.NewsGutter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.DashboardHeading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.9375rem 0;
+  font-size: 1.75rem;
+  .IconTray {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    .CurrentStatus {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.625rem;
+      height: fit-content;
+      background-color: rgb(6 7 8 / 75%);
+      border-radius: 0.75rem;
+      border: 0.0625rem solid rgba(255, 255, 255, 0.125);
+      padding: 0.3125rem 0.9375rem;
+      p {
+        font-size: 0.9375rem;
+        text-transform: uppercase;
+      }
+      .CurrentStatusLight {
+        display: flex;
+        .AnimatedPulseFront {
+          width: 0.9375rem;
+          height: 0.9375rem;
+          background-color: #0fa065;
+          border-radius: 50%;
+          filter: blur(0.3125rem);
+        }
+        .AnimatedPulseBack {
+          height: 0.9375rem;
+          width: 0.9375rem;
+          position: absolute;
+          border-radius: 50%;
+          animation: pulse-animation 1.5s infinite;
+        }
+      }
+    }
+    .Notifications {
+      display: flex;
+      border-radius: 3.125rem;
+      cursor: pointer;
+      path {
+        width: 0.25rem;
+      }
+    }
+  }
+}
+
+.NewsPanel {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 2.1875rem;
+  padding: 2.8125rem;
+}
+
+.NewsHeading h2 {
+  font-size: 2.625rem;
+}
+
+.NewsProviderDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.NewsProviderLogo {
+  width: 2.5rem;
+  img {
+    height: auto;
+    width: 100%;
+  }
+}
+
+.NewsProviderName {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.NewsDatePublished {
+  font-size: 0.75rem;
+  font-weight: 300;
+  text-align: right;
+}

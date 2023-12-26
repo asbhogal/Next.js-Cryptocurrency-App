@@ -1,9 +1,0 @@
-@use '../partials/variables' as *;
-
-.App {
-    display: flex;
-    background-color: #000;
-    > * {
-        display: flex;
-    }
-}

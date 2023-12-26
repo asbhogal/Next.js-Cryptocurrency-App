@@ -42,3 +42,7 @@ next-env.d.ts
 /blob-report/
 /playwright/.cache/
 notes.txt
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/

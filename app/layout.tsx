@@ -15,9 +15,9 @@ export default function RootLayout({
     <html lang="en" className={`${noto_sans.className}`}>
       <body>
         <Navbar />
-        <div className="App">
+        <main className="App">
           <Provider store={store}>{children}</Provider>
-        </div>
+        </main>
       </body>
     </html>
   );

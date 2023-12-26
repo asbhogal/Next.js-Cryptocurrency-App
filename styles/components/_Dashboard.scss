@@ -3,7 +3,7 @@
 .Dashboard {
   flex-grow: 1;
   flex-direction: column;
-  gap: 2.1875rem;
+  gap: 35px;
   > * {
     display: flex;
   }
@@ -11,41 +11,42 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding: 0.9375rem 0;
-    font-size: 1.75rem;
+    gap: 0.9375rem;
+    padding: 15px 0;
+    font-size: 28px;
     h2 {
-      font-size: clamp(1.125rem, 0.328rem + 2.5505vw, 2.625rem);
+      font-size: clamp(18px, 5.248px + 2.5505vw, 42px);
     }
     .IconTray {
       display: flex;
       align-items: center;
-      gap: 0.625rem;
+      gap: 10px;
       .CurrentStatus {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 0.625rem;
+        gap: 10px;
         height: fit-content;
         background-color: rgb(6 7 8 / 75%);
-        border-radius: 0.75rem;
-        border: 0.0625rem solid rgba(255, 255, 255, 0.125);
-        padding: 0.3125rem 0.9375rem;
+        border-radius: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.125);
+        padding: 5px 15px;
         p {
-          font-size: 0.9375rem;
+          font-size: 15px;
           text-transform: uppercase;
         }
         .CurrentStatusLight {
           display: flex;
           .AnimatedPulseFront {
-            width: 0.9375rem;
-            height: 0.9375rem;
+            width: 15px;
+            height: 15px;
             background-color: #0fa065;
             border-radius: 50%;
-            filter: blur(0.3125rem);
+            filter: blur(5px);
           }
           .AnimatedPulseBack {
-            height: 0.9375rem;
-            width: 0.9375rem;
+            height: 15px;
+            width: 15px;
             position: absolute;
             border-radius: 50%;
             animation: pulse-animation 1.5s infinite;
@@ -54,10 +55,10 @@
       }
       .Notifications {
         display: flex;
-        border-radius: 3.125rem;
+        border-radius: 50px;
         cursor: pointer;
         path {
-          width: 0.25rem;
+          width: 4px;
         }
       }
     }
@@ -66,25 +67,25 @@
 
 .CryptoSnapshots {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(9.0625rem, 1fr));
-  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+  gap: 20px;
   .CryptoSnapshot {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    flex: 1 1 0rem;
-    gap: 0.625rem;
+    flex: 1 1 0px;
+    gap: 10px;
     background-color: rgb(6 7 8 / 75%);
-    border-radius: 0.75rem;
-    border: 0.0625rem solid rgba(255, 255, 255, 0.125);
-    padding: 0.625rem;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    padding: 10px;
     h3 {
       font-weight: 200;
-      font-size: 1.125rem;
+      font-size: 18px;
     }
     p {
       font-weight: 300;
-      font-size: 1.75rem;
+      font-size: 28px;
     }
   }
 }
@@ -96,8 +97,8 @@
     box-shadow: 0 0 #033923;
   }
   50% {
-    box-shadow: 0 0 0 0.4375rem #033923;
-    filter: blur(0.4375rem);
+    box-shadow: 0 0 0 7px #033923;
+    filter: blur(7px);
   }
   100% {
     box-shadow: 0 0 #033923;

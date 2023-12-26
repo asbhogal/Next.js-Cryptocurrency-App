@@ -4,6 +4,7 @@ import millify from "millify";
 import { useGetCryptoFullListQuery } from "@/services/cryptoApi";
 import { LineWave } from "react-loader-spinner";
 import { CryptoCurrencyType } from "@/utils/types";
+import { OPTIONS } from "@/utils/constants";
 
 const Cryptocurrencies = () => {
   const { data, isFetching } = useGetCryptoFullListQuery({}),
@@ -50,16 +51,18 @@ const Cryptocurrencies = () => {
                 <span>{currency.symbol}</span>
               </div>
             </div>
-            <span>{`$ ${millify(currency.price, {
-              precision: 3,
-              space: true,
-            })}`}</span>
-            <span>{`$ ${millify(currency.marketCap, {
-              precision: 3,
-              space: true,
-            })}`}</span>
-            <span>{`${millify(currency.change, { precision: 3 })} %`}</span>
-            {/* <span>{ currency.sparkline }</span> */}
+            <div>
+              <p className="CryptocurrencyMobileHeading">Price</p>
+              <span>{`$ ${millify(currency.price, OPTIONS)}`}</span>
+            </div>
+            <div>
+              <p className="CryptocurrencyMobileHeading">Market Cap</p>
+              <span>{`$ ${millify(currency.marketCap, OPTIONS)}`}</span>
+            </div>
+            <div>
+              <p className="CryptocurrencyMobileHeading">Change</p>
+              <span>{`${millify(currency.change, { precision: 3 })} %`}</span>
+            </div>
           </div>
         ))}
       </div>

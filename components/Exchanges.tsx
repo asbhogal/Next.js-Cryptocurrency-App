@@ -4,6 +4,8 @@ import Link from "next/link";
 import { LineWave } from "react-loader-spinner";
 import { useGetCryptoExchangesQuery } from "../services/cryptoExchangesApi";
 import { ExchangeType } from "@/utils/types";
+import millify from "millify";
+import { OPTIONS } from "@/utils/constants";
 
 const Exchanges = () => {
   const { data, isFetching } = useGetCryptoExchangesQuery({ count: 10 }),
@@ -25,8 +27,6 @@ const Exchanges = () => {
         visible={true}
       />
     );
-
-  console.log(exchangeData);
 
   return (
     <div className="ExchangesPanel">
@@ -55,9 +55,26 @@ const Exchanges = () => {
                   />
                   <div className="ExchangeListName">{exchanges.name}</div>
                 </div>
-                <span>{exchanges.trust_score}</span>
-                <span>{exchanges.trade_volume_24h_btc}</span>
-                <span>{exchanges.trade_volume_24h_btc_normalized}</span>
+                <div>
+                  <p className="CryptocurrencyMobileHeading">Trust Score</p>
+                  <span>{exchanges.trust_score}</span>
+                </div>
+                <div>
+                  <p className="CryptocurrencyMobileHeading">
+                    24hr Trade Vol. (Normalized)
+                  </p>
+                  <span>{`${millify(
+                    exchanges.trade_volume_24h_btc,
+                    OPTIONS
+                  )}`}</span>
+                </div>
+                <div>
+                  <p className="CryptocurrencyMobileHeading">24hr Trade Vol.</p>
+                  <span>{`${millify(
+                    exchanges.trade_volume_24h_btc_normalized,
+                    OPTIONS
+                  )}`}</span>
+                </div>
               </Link>
             ))}
         </div>

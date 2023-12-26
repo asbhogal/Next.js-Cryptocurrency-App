@@ -65,11 +65,6 @@ const TopCryptos = ({ simplified }: { simplified: boolean }) => {
             <div className="CryptoChange">
               <p>Change:</p>
               <p>{`${millify(currency.change, { precision: 3 })} %`}</p>
-              {/* {console.log((currency.change).slice(0, 1))} */}
-              {/* { ((currency.change).slice(0, 1)) === '-' 
-                                ? document.getElementsByClassName('CryptoChange').style.color = "Red" 
-                                : document.getElementsByClassName('CryptoChange').style.color = "Green"
-                            } */}
             </div>
           </div>
         ))}

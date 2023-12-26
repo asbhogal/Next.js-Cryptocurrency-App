@@ -8,7 +8,6 @@
 .ExchangesTable {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   gap: 1.875rem;
   width: 100%;
   .TableContainer {
@@ -16,18 +15,15 @@
     grid-gap: 1.5625rem;
     gap: 1.5625rem;
     .TableHeadings {
-      display: grid;
       grid-template-columns: repeat(4, 1fr);
       padding: 0.3125rem 0.625rem;
     }
     .ExchangesRow {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
       align-items: center;
       background-color: rgba(6, 7, 8, 0.75);
       border-radius: 0.75rem;
       border: 0.0625rem solid rgba(255, 255, 255, 0.125);
-      padding: 0.3125rem 0.625rem;
       text-decoration: none;
       transition: 0.3s all ease;
       &:hover {

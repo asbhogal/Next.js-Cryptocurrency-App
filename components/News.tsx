@@ -17,8 +17,6 @@ const News = () => {
   const cryptoNewsProviderPlaceholder =
     "/assets/CryptoNewsProviderPlaceholder.svg";
 
-  console.log(cryptoNews);
-
   if (!cryptoNews)
     return (
       <LineWave

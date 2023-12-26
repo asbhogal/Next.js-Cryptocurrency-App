@@ -4,7 +4,6 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
   gap: 1.25rem;
-  padding: 3.125rem;
   .CryptoNewsCard {
     display: flex;
     flex-direction: column;
@@ -22,8 +21,9 @@
     }
     .CryptoNewsImg {
       width: auto;
-      height: auto;
-      border-radius: 0.75rem;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 0.5625rem;
     }
   }
 }
@@ -97,6 +97,7 @@
   flex-direction: column;
   flex-grow: 1;
   gap: 2.1875rem;
+  padding: 2.8125rem;
 }
 
 .NewsHeading h2 {
